@@ -55,7 +55,36 @@ nav{
 
 /* FIM ESTILO CABEÇALHO */
 
+/* INICIO SEÇÃO CONTEUDO */
 
+.apresentacao{
+    margin: 100px 50px;
+}
+
+.apresentacao-conteudo{
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.apresentacao-conteudo h2{
+    font-size: 40px;
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(83, 223, 251), rgb(12, 163, 193), rgb(255,255,255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: move 90s linear infinite;
+}
+
+.apresentacao-conteudo p{
+    text-align: justify;
+    letter-spacing: 3px;
+    font-size: 20px;
+    width: 50%;
+}
+
+
+
+/* FIM SEÇÃO CONTEUDO */
 
 /* ANIMAÇÕES */
 @keyframes fadeIn{
@@ -78,4 +107,10 @@ nav{
     0%{
         transform: translate(-20px);
     }    
+}
+
+@keyframes move{
+    to{
+        background-position: 4500vh;
+    }
 }
