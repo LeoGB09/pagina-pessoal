@@ -58,13 +58,17 @@ nav{
 /* INICIO SEÇÃO CONTEUDO */
 
 .apresentacao{
-    margin: 100px 50px;
+    margin: 0px 50px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
 .apresentacao-conteudo{
     display: flex;
     flex-direction: column;
     gap: 36px;
+    animation: transicaoLeftToRight 0.5s ease-in-out, fadeIn 1s ease-in-out;
 }
 
 .apresentacao-conteudo h2{
@@ -77,36 +81,114 @@ nav{
 
 .apresentacao-conteudo p{
     text-align: justify;
+    text-indent: 40px;
     letter-spacing: 3px;
     font-size: 20px;
-    width: 50%;
+    width: 70%;
 }
 
+.imagem-perfil{
+    width: 40%;
+    animation: transicaoRightToLeft 0.5s ease-in-out, fadeIn 1s ease-in-out;
+}
 
+/* VERSÃO PARA TABLET */
+@media (max-width: 1024px){
+    .apresentacao{
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .apresentacao-conteudo{
+        align-items: center;
+    }
+
+    .apresentacao-conteudo h2{
+        font-size: 40px;
+        margin-top: 40px;
+    }
+    
+    .apresentacao-conteudo p{
+        font-size: 20px;
+        width: 90%;
+    }
+
+    .imagem-perfil{
+        animation: transicaoLeftToRight 0.5s ease-in-out, fadeIn 1s ease-in-out;
+        width: 70%;
+    }
+
+}
+/* VERSÕES MENORES DE TABLET */
+@media (max-width: 850px){
+    .cabecalho{
+        justify-content: center;
+    }
+    .cabecalho h1{
+        display: none;
+    }
+
+    .imagem-perfil{
+        width: 60%;
+    }
+
+}
+/* VERSÃO DE CELULAR */
+@media (max-width: 450px){
+    .cabecalho a{
+        font-size: 15px;
+    }
+
+    .apresentacao{
+        margin: 0px 0px;
+    }
+
+    .apresentacao-conteudo h2{
+        text-align: center;
+    }
+
+    .apresentacao-conteudo p{
+        font-size: 14px;
+        width: 95%;
+        letter-spacing: 1px;
+    }
+
+    .imagem-perfil{
+        width: 80%;
+    }
+}
 
 /* FIM SEÇÃO CONTEUDO */
 
 /* ANIMAÇÕES */
 @keyframes fadeIn{
-    0%{
+    /* Quando se trata de apenas 2 pontos, precisa ser usado o "from" e "to" ao inves de % */
+    from{
         opacity: 0;
     }
-    100%{
+    to{
         opacity: 1;
     }
 }
 
 @keyframes transicaoRightToLeft{
-    0%{
+    /* Quando uma animação for feita, ela precisa ter inicio e fim, não se deve usar apenas um valor */
+    from{
         transform: translate(20px);
+    }
+    to{
+        transform: translate(0px);        
     }
 
 }
 
 @keyframes transicaoLeftToRight{
-    0%{
+    from{
         transform: translate(-20px);
-    }    
+    }
+    to{
+        transform: translate(0px);        
+    }  
 }
 
 @keyframes move{
