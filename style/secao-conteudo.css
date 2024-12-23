@@ -1,0 +1,39 @@
+/* INICIO SEÇÃO CONTEUDO */
+
+.apresentacao{
+    margin: 0px 50px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.apresentacao-conteudo{
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    animation: transicaoLeftToRight 0.5s ease-in-out, fadeIn 1s ease-in-out;
+}
+
+.subtitulo{
+    font-size: 40px;
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(83, 223, 251), rgb(12, 163, 193), rgb(255,255,255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: move 90s linear infinite;
+    text-transform: uppercase;
+}
+
+.apresentacao-conteudo p{
+    text-align: justify;
+    text-indent: 40px;
+    letter-spacing: 3px;
+    font-size: 20px;
+    width: 70%;
+}
+
+.imagem-perfil{
+    width: 40%;
+    animation: transicaoRightToLeft 0.5s ease-in-out, fadeIn 1s ease-in-out;
+}
+
+/* FIM SEÇÃO CONTEUDO */

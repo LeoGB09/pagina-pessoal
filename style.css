@@ -17,149 +17,6 @@ body{
     background-color: #0A043C;
 }
 
-/* INICIO ESTILO CABEÇALHO */
-
-header{
-    border-bottom: 1px solid white;
-}
-
-h1{
-    cursor: default;
-    animation: transicaoLeftToRight 0.5s ease-in-out;
-}
-
-.cabecalho{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 2%;
-    animation: fadeIn 1s ease-in-out;
-}
-
-nav{
-    display: flex;
-    gap: 32px;
-}
-
-.opcao-nav{
-    font-size: 25px;
-    font-weight: 700;
-    animation: transicaoRightToLeft 0.5s ease-in-out;
-}
-
-.opcao-nav:hover{
-    transform: translate(-2px, -1px);
-    transition: 0.2s;
-    text-shadow: 3px 2px 13px rgba(255, 255, 255, 0.4)
-}
-
-/* FIM ESTILO CABEÇALHO */
-
-/* INICIO SEÇÃO CONTEUDO */
-
-.apresentacao{
-    margin: 0px 50px;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-}
-
-.apresentacao-conteudo{
-    display: flex;
-    flex-direction: column;
-    gap: 36px;
-    animation: transicaoLeftToRight 0.5s ease-in-out, fadeIn 1s ease-in-out;
-}
-
-.apresentacao-conteudo h2{
-    font-size: 40px;
-    background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(83, 223, 251), rgb(12, 163, 193), rgb(255,255,255));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: move 90s linear infinite;
-}
-
-.apresentacao-conteudo p{
-    text-align: justify;
-    text-indent: 40px;
-    letter-spacing: 3px;
-    font-size: 20px;
-    width: 70%;
-}
-
-.imagem-perfil{
-    width: 40%;
-    animation: transicaoRightToLeft 0.5s ease-in-out, fadeIn 1s ease-in-out;
-}
-
-/* VERSÃO PARA TABLET */
-@media (max-width: 1024px){
-    .apresentacao{
-        flex-direction: column;
-        gap: 40px;
-    }
-
-    .apresentacao-conteudo{
-        align-items: center;
-    }
-
-    .apresentacao-conteudo h2{
-        font-size: 40px;
-        margin-top: 40px;
-    }
-    
-    .apresentacao-conteudo p{
-        font-size: 20px;
-        width: 90%;
-    }
-
-    .imagem-perfil{
-        animation: transicaoLeftToRight 0.5s ease-in-out, fadeIn 1s ease-in-out;
-        width: 70%;
-    }
-
-}
-/* VERSÕES MENORES DE TABLET */
-@media (max-width: 850px){
-    .cabecalho{
-        justify-content: center;
-    }
-    .cabecalho h1{
-        display: none;
-    }
-
-    .imagem-perfil{
-        width: 60%;
-    }
-
-}
-/* VERSÃO DE CELULAR */
-@media (max-width: 450px){
-    .cabecalho a{
-        font-size: 15px;
-    }
-
-    .apresentacao{
-        margin: 0px 0px;
-    }
-
-    .apresentacao-conteudo h2{
-        text-align: center;
-    }
-
-    .apresentacao-conteudo p{
-        font-size: 14px;
-        width: 95%;
-        letter-spacing: 1px;
-    }
-
-    .imagem-perfil{
-        width: 80%;
-    }
-}
-
-/* FIM SEÇÃO CONTEUDO */
-
 /* ANIMAÇÕES */
 @keyframes fadeIn{
     /* Quando se trata de apenas 2 pontos, precisa ser usado o "from" e "to" ao inves de % */
@@ -190,6 +47,42 @@ nav{
         transform: translate(0px);        
     }  
 }
+
+/* @keyframes animacaoJump1{
+    0%{
+        transform: translatey( 0px);
+    }
+    25%{
+        transform: translatey( -20px);        
+    }
+    0%{
+        transform: translatey( 0px);
+    }  
+}
+
+@keyframes animacaoJump2{
+    0%{
+        transform: translatey( 0px);
+    }
+    50%{
+        transform: translatey( -20px);        
+    }
+    0%{
+        transform: translatey( 0px);
+    }  
+}
+
+@keyframes animacaoJump3{
+    0%{
+        transform: translatey( 0px);
+    }
+    75%{
+        transform: translatey( -20px);        
+    }
+    0%{
+        transform: translatey( 0px);
+    }  
+} */
 
 @keyframes move{
     to{

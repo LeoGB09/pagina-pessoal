@@ -1,0 +1,65 @@
+/* VERSÃO PARA TABLET */
+@media (max-width: 1024px){
+    .apresentacao{
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .apresentacao-conteudo{
+        align-items: center;
+    }
+
+    .apresentacao-conteudo h2{
+        font-size: 40px;
+        margin-top: 40px;
+    }
+    
+    .apresentacao-conteudo p{
+        font-size: 20px;
+        width: 90%;
+    }
+
+    .imagem-perfil{
+        animation: transicaoLeftToRight 0.5s ease-in-out, fadeIn 1s ease-in-out;
+        width: 70%;
+    }
+
+}
+/* VERSÕES MENORES DE TABLET */
+@media (max-width: 850px){
+    .cabecalho{
+        justify-content: center;
+    }
+    .cabecalho h1{
+        display: none;
+    }
+
+    .imagem-perfil{
+        width: 60%;
+    }
+
+}
+/* VERSÃO DE CELULAR */
+@media (max-width: 450px){
+    .cabecalho a{
+        font-size: 15px;
+    }
+
+    .apresentacao{
+        margin: 0px 0px;
+    }
+
+    .apresentacao-conteudo h2{
+        text-align: center;
+    }
+
+    .apresentacao-conteudo p{
+        font-size: 14px;
+        width: 95%;
+        letter-spacing: 1px;
+    }
+
+    .imagem-perfil{
+        width: 80%;
+    }
+}

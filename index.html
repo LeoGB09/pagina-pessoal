@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style/header.css">
+    <link rel="stylesheet" href="./style/secao-conteudo.css">
+    <link rel="stylesheet" href="./style/secao-habilidades.css">
+    <link rel="stylesheet" href="./style/modal.css">
+    <link rel="stylesheet" href="./style/responsividade.css">
     <title>Meu site</title>
 </head>
 <body>
@@ -21,11 +26,59 @@
     </header>
     <section class="apresentacao">
         <div class="apresentacao-conteudo">
-            <h2>Olá, seja bem vindo ao meu site pessoal</h2>
+            <h2 class="subtitulo">Olá, seja bem vindo ao meu site pessoal</h2>
             <p>Me chamo Leonardo e sou desenvolvedor <strong>Front-end.</strong> Atuo principalmente no desenvolvimento de landing pages e estou sempre buscando aprimorar minhas habilidades. Comecei meus estudos em programação em 2023 e atualmente curso Análise e Desenvolvimento de Sistemas.</p>
         </div>
             <img src="./img/Recorte_Leo_v1.png" alt="Foto de Leonardo, cabelo curto, oculos e barba" class="imagem-perfil">            
-
     </section>
+    <section class="campo-sobre-habilidades">
+        <h2 class="subtitulo">Um pouco sobre meu trabalho e habilidades</h2>
+        <p>Como desenvolvedor Front-end, utilizo as seguintes tecnologias:</p>
+        
+        <div class="campo-tecnologias">
+            <button class="button-open-modal" onclick="openModal('buttonModal-1', 'fade-1')">
+                <img src="./img/assets/css By Freepik.png" alt="Icone css, feita por Freepik" class="icones-tecnologias primeiro">
+            </button>
+            <div class="fade hide" id="fade-1">
+                <div class="modal-body hide" id="buttonModal-1">
+                    <button onclick="closeModal('buttonModal-1', 'fade-1')">
+                        <img src="/img/assets/letra-x By pictranoosa.png" alt="icone para fechar o model, feito por pictranoosa" class="button-close-model">
+                    </button>
+                    <p class="modal-texto">
+                        CSS (Cascading Style Sheets): É a linguagem que define o estilo visual de uma página web. É como a roupa que vestimos.
+                    </p>                    
+                </div>                
+            </div>
+
+
+            <button class="button-open-modal" onclick="openModal('buttonModal-2', 'fade-2')">
+                <img src="./img/assets/html By Freepik.png" alt="Icone html, feita por Freepik" class="icones-tecnologias primeiro">                
+            </button>
+            <div class="fade hide" id="fade-2">
+                <div class="modal-body hide" id="buttonModal-2">
+                    <button onclick="closeModal('buttonModal-2', 'fade-2')">
+                        <img src="/img/assets/letra-x By pictranoosa.png" alt="icone para fechar o model, feito por pictranoosa" class="button-close-model">
+                    </button>
+                    <p class="modal-texto">HTML (HyperText Markup Language): É a linguagem que define a estrutura de uma página web. É como o esqueleto de um corpo humano.</p>                    
+                </div>                
+            </div>
+
+
+            <button class="button-open-modal" onclick="openModal('buttonModal-3', 'fade-3')">
+                <img src="./img/assets/js By Freepik.png" alt="Icone javascript, feita por Freepik" class="icones-tecnologias terceiro">
+            </button>
+
+            <div class="fade hide" id="fade-3">
+                <div class="modal-body hide" id="buttonModal-3">
+                    <button onclick="closeModal('buttonModal-3', 'fade-3')">
+                        <img src="/img/assets/letra-x By pictranoosa.png" alt="icone para fechar o model, feito por pictranoosa" class="button-close-model">
+                    </button>
+                    <p class="modal-texto">JavaScript: É uma linguagem de programação que adiciona interatividade a uma página web. É como o cérebro que controla as ações.</p>                    
+                </div>                
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
