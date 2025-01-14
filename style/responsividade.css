@@ -1,5 +1,6 @@
 /* VERSÃO PARA TABLET */
 @media (max-width: 1024px){
+    /* seção 1 */
     .apresentacao{
         flex-direction: column;
         gap: 40px;
@@ -21,9 +22,21 @@
 
     .imagem-perfil{
         animation: transicaoLeftToRight 0.5s ease-in-out, fadeIn 1s ease-in-out;
+        width: 60%;
+    }
+
+    /* seção 2 */
+    .campo-sobre-habilidades{
+        margin-top: 100px;
+    }
+
+    .icones-tecnologias{
         width: 70%;
     }
 
+    .modal-body{
+        width: 60%;
+    }
 }
 /* VERSÕES MENORES DE TABLET */
 @media (max-width: 850px){
@@ -33,18 +46,27 @@
     .cabecalho h1{
         display: none;
     }
-
+    /* Seção 1 */
     .imagem-perfil{
         width: 60%;
     }
+    /* Seção 2 */
+    .subtitulo{
+        font-size: 40px;
+        text-align: center;
+    }
 
+    .campo-sobre-habilidades p{
+        margin: 0 20px;
+        text-align: center;
+    }
 }
 /* VERSÃO DE CELULAR */
 @media (max-width: 450px){
     .cabecalho a{
         font-size: 15px;
     }
-
+    /* Seção 1 */
     .apresentacao{
         margin: 0px 0px;
     }
@@ -61,5 +83,21 @@
 
     .imagem-perfil{
         width: 80%;
+    }
+    /* Seção 2*/
+    .campo-sobre-habilidades{
+        margin-top: 0;
+    }
+
+    .campo-tecnologias{
+        gap: 0;
+    }
+
+    .icones-tecnologias{
+        padding: 20px 5px;
+    }
+
+    .modal-body{
+        width: 90%;
     }
 }
