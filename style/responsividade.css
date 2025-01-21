@@ -28,7 +28,7 @@
 
     /* seção 2 */
     .campo-sobre-habilidades{
-        margin-top: 100px;
+        margin-top: 130px;
         text-align: center;
     }
 
@@ -65,6 +65,7 @@
     .subtitulo{
         font-size: 25px;
         text-align: center;
+        margin-top: 80px;
     }
 
     .campo-sobre-habilidades p{
@@ -137,7 +138,13 @@
 }
 
 @media (max-height: 600px){
-    .apresentacao{
-        height: 130vh;
+    .campo-sobre-habilidades{
+        margin-top: 530px;
+    }
+}
+
+@media (max-height: 450px){
+    .campo-sobre-habilidades{
+        margin-top: 700px;
     }
 }
