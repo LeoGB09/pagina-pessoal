@@ -12,3 +12,5 @@ function closeModal(modalId, fadeId){
     modal.classList.add('hide');
     fade.classList.add('hide')
 }
+
+

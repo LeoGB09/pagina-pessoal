@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./style/secao-habilidades.css">
     <link rel="stylesheet" href="./style/modal.css">
     <link rel="stylesheet" href="./style/responsividade.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Meu site</title>
 </head>
 <body>
@@ -26,17 +27,17 @@
     </header>
     <section class="apresentacao">
         <div class="apresentacao-conteudo">
-            <h2 class="subtitulo">Olá, seja bem vindo ao meu site pessoal</h2>
+            <h2 class="subtitulo">Olá, seja bem vindo ao meu site</h2>
             <p>Me chamo Leonardo e sou desenvolvedor <strong>Front-end.</strong> Atuo principalmente no desenvolvimento de landing pages e estou sempre buscando aprimorar minhas habilidades. Comecei meus estudos em programação em 2023 e atualmente curso Análise e Desenvolvimento de Sistemas.</p>
         </div>
-            <img src="./img/Recorte_Leo_v1.png" alt="Foto de Leonardo, cabelo curto, oculos e barba" class="imagem-perfil">            
+        <img src="./img/Recorte_Leo_v1.png" alt="Foto de Leonardo, cabelo curto, oculos e barba" class="imagem-perfil">            
     </section>
     <!-- id="habilidades" tem a função de encaminhar o usuario para essa seção da pagina quando clica no botão habilidades no cabeçalho -->
     <section class="campo-sobre-habilidades" id="habilidades">
-        <h2 class="subtitulo">Um pouco sobre meu trabalho e habilidades</h2>
-        <p>Como desenvolvedor Front-end, utilizo as seguintes tecnologias:</p>
+        <h2 class="subtitulo" data-aos="fade-up">Um pouco sobre meu trabalho e habilidades</h2>
+        <p data-aos="fade-up">Como desenvolvedor Front-end, utilizo as seguintes tecnologias:</p>
         
-        <div class="campo-tecnologias">
+        <div class="campo-tecnologias" data-aos="fade-up">
             <button class="button-open-modal" onclick="openModal('buttonModal-1', 'fade-1')">
                 <img src="./img/assets/css By Freepik.png" alt="Icone css, feita por Freepik" class="icones-tecnologias">
             </button>
@@ -80,6 +81,14 @@
         </div>
     </section>
 
+    <div class="caixa-whatsapp">
+        <img src="./img/assets/WhatsApp_Logo_PNG.png" alt="icone do WhatsApp para contato" class="icone-whatsapp">
+    </div>
+
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>

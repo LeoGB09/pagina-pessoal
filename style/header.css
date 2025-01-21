@@ -26,11 +26,26 @@ nav{
     font-size: 25px;
     font-weight: 700;
     animation: transicaoRightToLeft 0.5s ease-in-out;
+    position: relative;
+}
+
+.opcao-nav::after{
+    content: " ";
+    width: 0%;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.opcao-nav:hover::after{
+    width: 100%;
 }
 
 .opcao-nav:hover{
-    transform: translate(-2px, -1px);
-    transition: 0.2s;
+    transition: 0.5s;
     text-shadow: 3px 2px 13px rgba(255, 255, 255, 0.4)
 }
 

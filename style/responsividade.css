@@ -3,6 +3,7 @@
     /* seção 1 */
     .apresentacao{
         flex-direction: column;
+        height: 70vh;
         gap: 40px;
     }
 
@@ -28,6 +29,7 @@
     /* seção 2 */
     .campo-sobre-habilidades{
         margin-top: 100px;
+        text-align: center;
     }
 
     .icones-tecnologias{
@@ -47,12 +49,21 @@
         display: none;
     }
     /* Seção 1 */
+    .apresentacao{
+        height: 80vh;
+    }
+    .apresentacao-conteudo h2{
+        font-size: 25px;
+    }
+    .apresentacao-conteudo p{
+        font-size: 16px;
+    }
     .imagem-perfil{
         width: 60%;
     }
     /* Seção 2 */
     .subtitulo{
-        font-size: 40px;
+        font-size: 25px;
         text-align: center;
     }
 
@@ -69,6 +80,7 @@
     /* Seção 1 */
     .apresentacao{
         margin: 0px 0px;
+        height: 90vh;
     }
 
     .apresentacao-conteudo h2{
@@ -86,7 +98,7 @@
     }
     /* Seção 2*/
     .campo-sobre-habilidades{
-        margin-top: 0;
+        margin-top: 1rem;
     }
 
     .campo-tecnologias{
@@ -99,5 +111,33 @@
 
     .modal-body{
         width: 90%;
+    }
+}
+/* VERSÕES MENORES DE CELULAR */
+@media (max-width: 400px){
+}
+
+/* VERSÕES DE 375PX */
+@media (max-width: 380px){
+    /* Seção 1 */
+    .apresentacao{
+        height: 100vh;
+    }
+
+    .campo-sobre-habilidades{
+        margin-top: 0rem;
+    }
+}
+
+@media (max-width: 350px){
+    /* Seção 1 */
+    .apresentacao{
+        height: 80vh;
+    }
+}
+
+@media (max-height: 600px){
+    .apresentacao{
+        height: 130vh;
     }
 }
