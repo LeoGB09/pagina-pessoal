@@ -3,7 +3,7 @@
     /* seção 1 */
     .apresentacao{
         flex-direction: column;
-        height: 70vh;
+        height: 100%;
         gap: 40px;
     }
 
@@ -28,7 +28,6 @@
 
     /* seção 2 */
     .campo-sobre-habilidades{
-        margin-top: 130px;
         text-align: center;
     }
 
@@ -49,9 +48,6 @@
         display: none;
     }
     /* Seção 1 */
-    .apresentacao{
-        height: 80vh;
-    }
     .apresentacao-conteudo h2{
         font-size: 25px;
     }
@@ -65,13 +61,16 @@
     .subtitulo{
         font-size: 25px;
         text-align: center;
-        margin-top: 80px;
     }
 
     .campo-sobre-habilidades p{
         margin: 0 20px;
         text-align: center;
     }
+}
+/* VERSÃO 600PX */
+@media (max-width: 600px){
+
 }
 /* VERSÃO DE CELULAR */
 @media (max-width: 450px){
@@ -81,7 +80,6 @@
     /* Seção 1 */
     .apresentacao{
         margin: 0px 0px;
-        height: 90vh;
     }
 
     .apresentacao-conteudo h2{
@@ -98,9 +96,6 @@
         width: 80%;
     }
     /* Seção 2*/
-    .campo-sobre-habilidades{
-        margin-top: 1rem;
-    }
 
     .campo-tecnologias{
         gap: 0;
@@ -121,9 +116,6 @@
 /* VERSÕES DE 375PX */
 @media (max-width: 380px){
     /* Seção 1 */
-    .apresentacao{
-        height: 100vh;
-    }
 
     .campo-sobre-habilidades{
         margin-top: 0rem;
@@ -132,12 +124,10 @@
 
 @media (max-width: 350px){
     /* Seção 1 */
-    .apresentacao{
-        height: 80vh;
-    }
+
 }
 
-@media (max-height: 600px){
+/* @media (max-height: 600px){
     .campo-sobre-habilidades{
         margin-top: 530px;
     }
@@ -147,4 +137,4 @@
     .campo-sobre-habilidades{
         margin-top: 700px;
     }
-}
+} */
