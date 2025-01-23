@@ -41,6 +41,9 @@
 }
 /* VERSÕES MENORES DE TABLET */
 @media (max-width: 850px){
+    .opcao-nav:hover::after{
+        width: 0%;
+    }
     .cabecalho{
         justify-content: center;
     }
@@ -67,10 +70,11 @@
         margin: 0 20px;
         text-align: center;
     }
-}
-/* VERSÃO 600PX */
-@media (max-width: 600px){
 
+    .icone-whatsapp:hover{
+        width: 70px;
+        height: 70px;
+    }
 }
 /* VERSÃO DE CELULAR */
 @media (max-width: 450px){
@@ -108,33 +112,15 @@
     .modal-body{
         width: 90%;
     }
-}
-/* VERSÕES MENORES DE CELULAR */
-@media (max-width: 400px){
-}
 
-/* VERSÕES DE 375PX */
-@media (max-width: 380px){
-    /* Seção 1 */
-
-    .campo-sobre-habilidades{
-        margin-top: 0rem;
+    .icone-whatsapp{
+        width: 50px;
+        height: 50px;
+        bottom: 15px;
+        right: 15px;
+    }
+    .icone-whatsapp:hover{
+        width: 50px;
+        height: 50px;
     }
 }
-
-@media (max-width: 350px){
-    /* Seção 1 */
-
-}
-
-/* @media (max-height: 600px){
-    .campo-sobre-habilidades{
-        margin-top: 530px;
-    }
-}
-
-@media (max-height: 450px){
-    .campo-sobre-habilidades{
-        margin-top: 700px;
-    }
-} */
